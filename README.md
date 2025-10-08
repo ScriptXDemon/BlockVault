@@ -91,10 +91,14 @@ python -m blockvault.app
 ```bash
 cd blockvault-frontend
 npm install
-npm start
+npm run dev
 ```
 
-The SPA expects `REACT_APP_API_BASE` (optional). By default it assumes the API is reachable via the same origin proxy.
+The frontend now uses Vite for faster development. It expects `VITE_API_BASE` (optional). By default it assumes the API is reachable via the same origin proxy configured in `vite.config.ts`.
+
+- **Dev server:** Runs on `http://localhost:5173`
+- **Build:** Run `npm run build` to create production build in `dist/`
+- **Preview:** Run `npm run preview` to preview production build
 
 ---
 
