@@ -10,7 +10,7 @@ import { Icon } from '../components/icons';
 import { Input } from '../components/ui/Input';
 import { useNetworkStore } from '../state/network';
 
-const API_BASE = process.env.REACT_APP_API_BASE || '';// kept for compatibility but dynamic apiUrl used
+const API_BASE = import.meta.env.VITE_API_BASE || '';// kept for compatibility but dynamic apiUrl used
 
 interface FileItem extends BVFileItem {}
 
