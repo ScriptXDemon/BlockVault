@@ -31,11 +31,14 @@ module.exports = {
         ]
       },
       colors: {
+        // Support both the CSS variables and direct color values
         background: {
+          DEFAULT: 'hsl(var(--background))',
           primary: '#1A1A2E', // deep charcoal
           secondary: '#2C2C4A', // card bg
           tertiary: '#3A3A5E', // alt card
         },
+        foreground: 'hsl(var(--foreground))',
         accent: {
           blue: '#00C0FF',
           teal: '#00E6FF',
@@ -46,9 +49,27 @@ module.exports = {
           primary: '#E0E0E0',
           secondary: '#A0A0A0',
         },
+        primary: {
+          DEFAULT: 'hsl(var(--primary))',
+          foreground: 'hsl(var(--primary-foreground))',
+        },
+        secondary: {
+          DEFAULT: 'hsl(var(--secondary))',
+          foreground: 'hsl(var(--secondary-foreground))',
+        },
+        muted: {
+          DEFAULT: 'hsl(var(--muted))',
+          foreground: 'hsl(var(--muted-foreground))',
+        },
+        card: {
+          DEFAULT: 'hsl(var(--card))',
+          foreground: 'hsl(var(--card-foreground))',
+        },
         // For gradients, glass, etc.
         glass: 'rgba(44,44,74,0.7)',
-        border: 'rgba(75,85,99,0.6)',
+        border: {
+          DEFAULT: 'hsl(var(--border))',
+        },
         ...require('tailwindcss/colors'),
       },
       backgroundImage: {

@@ -32,7 +32,7 @@ export function resolveApiBase(): string {
     return cached;
   }
   if (cached !== null) return cached;
-  const explicit = (process.env.REACT_APP_API_BASE || '').trim();
+  const explicit = (import.meta.env.VITE_API_BASE || '').trim();
   if (explicit) {
     cached = explicit.replace(/\/$/, '');
     console.info('[api] Using explicit API base', cached);

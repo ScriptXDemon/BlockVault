@@ -10,7 +10,7 @@ import { DragDrop } from '../components/ui/DragDrop';
 import { useNetworkStore } from '../state/network';
 import { Icon } from '../components/icons';
 
-const API_BASE = process.env.REACT_APP_API_BASE || '';
+const API_BASE = import.meta.env.VITE_API_BASE || '';
 
 export const UploadSection: React.FC = () => {
   const { jwt } = useAuthStore();
