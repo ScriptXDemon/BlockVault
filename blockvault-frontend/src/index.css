@@ -80,7 +80,7 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+  @apply bg-background-primary text-text-primary;
     font-feature-settings: "cv11", "ss01";
     font-optical-sizing: auto;
   }

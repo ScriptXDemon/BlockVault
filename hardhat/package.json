@@ -1,0 +1,14 @@
+{
+  "name": "blockvault-hardhat",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "hardhat": "^2.22.0"
+  }
+}

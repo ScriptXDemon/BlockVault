@@ -317,7 +317,7 @@ export const SharingSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="p-4 rounded-xl border border-border/50 bg-background-tertiary/40 space-y-3">
+  <div className="p-4 rounded-xl border border-border/50 bg-background-tertiary/40 space-y-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2 text-sm text-text-secondary">
             <Icon name="user" size={18} className="text-accent-blue" />

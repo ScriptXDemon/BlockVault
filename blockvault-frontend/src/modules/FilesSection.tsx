@@ -253,10 +253,10 @@ export const FilesSection: React.FC = () => {
   };
 
   const skeletons = Array.from({ length: 5 }).map((_,i) => (
-    <div key={i} className="p-4 rounded-xl border border-border/30 bg-background-tertiary/20 animate-pulse flex flex-col gap-3">
-      <div className="h-3 w-1/2 bg-background-tertiary/60 rounded" />
-      <div className="h-2 w-1/3 bg-background-tertiary/50 rounded" />
-      <div className="h-2 w-5/6 bg-background-tertiary/40 rounded" />
+  <div key={i} className="p-4 rounded-xl border border-border/30 bg-background-tertiary/20 animate-pulse flex flex-col gap-3">
+  <div className="h-3 w-1/2 bg-background-tertiary/60 rounded" />
+  <div className="h-2 w-1/3 bg-background-tertiary/50 rounded" />
+  <div className="h-2 w-5/6 bg-background-tertiary/40 rounded" />
     </div>
   ));
 

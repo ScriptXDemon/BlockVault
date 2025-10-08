@@ -1,0 +1,20 @@
+{
+  "name": "blockvault-indexer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "ethers": "^6.15.0",
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "pino": "^8.19.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.1"
+  }
+}
